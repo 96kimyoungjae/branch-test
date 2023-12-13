@@ -2,6 +2,11 @@ name: 스토어 배포
 
 on:
   workflow_dispatch:
+    inputs:
+      ref:
+        description: ""
+        required: true
+        default: "codepush-1.0.0"
 
 jobs:
   setup-js:
