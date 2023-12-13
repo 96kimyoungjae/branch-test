@@ -1,0 +1,10 @@
+name: 스토어 배포
+
+on:
+  workflow_dispatch:
+
+jobs:
+  setup-js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
